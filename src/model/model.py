@@ -1,5 +1,5 @@
 import topmost
-from config.config import DEVICE
+from src.config.config import DEVICE
 
 
 def get_model_and_trainer(dataset):
