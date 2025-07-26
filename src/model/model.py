@@ -26,6 +26,6 @@ def get_model_and_trainer(dataset):
         weight_MI=50
     )
     model = model.to(DEVICE)
-    trainer = topmost.CrosslingualTrainer(model, dataset, lr_scheduler='StepLR', lr_step_size=125, epochs=500)
+    trainer = topmost.CrosslingualTrainer(model, dataset, lr_scheduler='StepLR', lr_step_size=125, epochs=10)
     
     return model, trainer

@@ -17,7 +17,7 @@ def _diversity(top_words: List[str]):
     return TD
 
 
-def multiaspect_diversity(top_words: List[str]):
+def multiaspect_diversity(top_words: List[List[str]]):
     TD_list = list()
     for level_top_words in top_words:
         TD = _diversity(level_top_words)
