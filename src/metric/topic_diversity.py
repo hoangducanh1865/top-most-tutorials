@@ -17,12 +17,12 @@ def _diversity(top_words: List[str]):
     return TD
 
 
-def multiaspect_diversity(top_words: List[List[str]]):
+def multiaspect_diversity(top_words_list):
     TD_list = list()
-    for level_top_words in top_words:
-        TD = _diversity(level_top_words)
+    for top_words in top_words_list:
+        TD = _diversity(top_words)
         TD_list.append(TD)
-
+    print(top_words_list)
     return np.mean(TD_list)
 
 
