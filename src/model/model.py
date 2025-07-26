@@ -3,7 +3,7 @@ from src.config.config import DEVICE
 
 
 def get_model_and_trainer(dataset):
-    model = topmost.ETM(dataset.vocab_size, pretrained_WE=dataset.pretrained_WE)
+    model = topmost.ETM(dataset.vocab_size)
     # model = topmost.DecTM(dataset.vocab_size)
     # model = topmost.TSCTM(dataset.vocab_size)
     # model = topmost.CombinedTM(dataset.vocab_size, dataset.contextual_embed_size)
