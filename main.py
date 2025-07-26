@@ -12,4 +12,4 @@ print(f"TD: {TD:.5f}")
 print(clt_results)
 print(cls_results)
 
-infer_model()
+infer_model(trainer, dataset)
