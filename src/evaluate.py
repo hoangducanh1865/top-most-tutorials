@@ -1,4 +1,5 @@
 from topmost import eva
+from src.metric.topic_diversity import multiaspect_diversity
 
 
 '''Basic Model'''
@@ -17,7 +18,7 @@ def evaluate_model(trainer, dataset, top_words_en, top_words_cn):
     
     # compute topic coherence (CNPMI)
     # refer to https://github.com/BobXWu/CNPMI
-    TD = eva.multiaspect_diversity((top_words_en, top_words_cn))
+    TD = multiaspect_diversity((top_words_en, top_words_cn))
 
     results = eva.crosslingual_cls(
         train_theta_en,
